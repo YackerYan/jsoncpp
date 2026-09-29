@@ -681,7 +681,7 @@ public:
   String toStyledString(const StreamWriterBuilder& builder) const;
   /// Serialize with the given floating-point precision (capped at 17).
   String toStyledString(unsigned int precision,
-                        PrecisionType precisionType) const;
+                        PrecisionType precisionType = PrecisionType::decimalPlaces) const;
 
   const_iterator begin() const;
   const_iterator end() const;
